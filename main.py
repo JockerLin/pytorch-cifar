@@ -154,7 +154,7 @@ def test(epoch, saveFlag=True):
                 'acc': acc,
                 'epoch': epoch,
             }
-            cur_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+            cur_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
             file_name = "./checkpoint/{}-acc{}-ckpt.pth".format(cur_time, acc)
             if not os.path.isdir('checkpoint'):
                 os.mkdir('checkpoint')

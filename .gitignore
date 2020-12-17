@@ -6,6 +6,7 @@ __pycache__/
 
 # dataset or model
 data/
+checkpoint/
 
 *.h5
 *.v2

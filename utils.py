@@ -47,8 +47,9 @@ term_width = 0
 try:
     _, term_width = os.popen('stty size', 'r').read().split()
     term_width = int(term_width)
+    print("term width:", term_width)
 except Exception as e:
-    term_width = 2014
+    term_width = 100
 
 TOTAL_BAR_LENGTH = 65.
 last_time = time.time()
